@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mirdavurov Iskandar Mirilyos o‘g‘li</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&amp;display=swap">
+<style>
+:root{--bg:#f4f6fb;--card:#ffffff;--fg:#0e1220;--mut:#5b6478;--line:rgba(14,18,32,.1);--a:#3b6cff;--b:#9b5cff;--sh:0 20px 60px rgba(40,60,120,.12);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0d18;--card:#121729;--fg:#eef1fa;--mut:#99a3bd;--line:rgba(255,255,255,.1);--sh:0 20px 60px rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{--bg:#0a0d18;--card:#121729;--fg:#eef1fa;--mut:#99a3bd;--line:rgba(255,255,255,.1);--sh:0 20px 60px rgba(0,0,0,.5)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--fg);font-family:"Jost","Segoe UI",system-ui,Arial,sans-serif;display:flex;justify-content:center;padding:32px 16px;position:relative;overflow-x:hidden}
+body::before{content:"";position:fixed;width:520px;height:520px;right:-160px;top:-160px;border-radius:50%;background:radial-gradient(circle,var(--b),transparent 70%);opacity:.22;pointer-events:none}
+body::after{content:"";position:fixed;width:520px;height:520px;left:-180px;bottom:-180px;border-radius:50%;background:radial-gradient(circle,var(--a),transparent 70%);opacity:.22;pointer-events:none}
+.wrap{position:relative;z-index:1;width:100%;max-width:640px;margin:auto}
+.lang{display:flex;justify-content:flex-end;gap:6px;margin-bottom:14px}
+.lang button{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--card);color:var(--mut);padding:4px 12px;border-radius:999px;cursor:pointer}
+.lang button.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:28px;box-shadow:var(--sh);padding:44px 32px;text-align:center}
+.avatar{width:84px;height:84px;margin:0 auto 20px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;color:#fff;font-size:1.9rem;font-weight:500}
+h1{margin:0;font-size:clamp(1.7rem,6vw,2.6rem);font-weight:400;line-height:1.1;letter-spacing:-.01em}
+.sub{margin:10px 0 0;color:var(--mut);font-weight:300;font-size:1.05rem}
+.list{margin:32px 0 0;display:grid;gap:12px;text-align:left}
+.row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 18px;border:1px solid var(--line);border-radius:16px;color:inherit;text-decoration:none}
+.row small{display:block;color:var(--mut);font-size:.8rem;font-weight:400}
+.row b{font-weight:500;font-size:1.08rem}
+a.row:hover{border-color:var(--a)}
+.go{color:var(--a);font-size:.9rem;font-weight:500;white-space:nowrap}
+h2{margin:36px 0 14px;font-size:1rem;font-weight:500;color:var(--mut)}
+.soc{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.soc a{padding:10px 20px;border-radius:999px;color:#fff;text-decoration:none;font-weight:500;font-size:.95rem}
+.tg{background:#229ed9}.ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}.fb{background:#1877f2}.wa{background:#1fa855}.ml{background:#e8590c}.gm{background:#ea4335}
+.soc a:hover{filter:brightness(1.1)}
+@media(max-width:480px){.card{padding:32px 18px}.row{flex-direction:column;align-items:flex-start;gap:6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lang" role="group" aria-label="Language">
+    <button data-l="ru" class="on">RU</button><button data-l="uz">UZ</button>
+  </div>
+  <div class="card">
+    <div class="avatar" aria-hidden="true" data-i="ini"></div>
+    <h1 data-i="name"></h1>
+    <p class="sub" id="born"></p>
+
+    <div class="list">
+      <div class="row"><div><small data-i="addr"></small><b data-i="addrv"></b></div></div>
+      <a class="row" href="tel:+998958445566"><div><small data-i="phone"></small><b>+998 95 844 55 66</b></div><span class="go" data-i="call"></span></a>
+      <a class="row" href="tel:+998909766753"><div><small data-i="phone"></small><b>+998 90 976 67 53</b></div><span class="go" data-i="call"></span></a>
+    </div>
+
+    <h2 data-i="soc"></h2>
+    <div class="soc">
+      <a class="tg" href="https://t.me/UZBHACKER" target="_blank" rel="noopener">Telegram</a>
+      <a class="wa" href="https://wa.me/998958445566" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="ig" href="https://www.instagram.com/pc_iskandar_i.t/" target="_blank" rel="noopener">Instagram</a>
+      <a class="fb" href="https://www.facebook.com/iskandar.mirdavurov" target="_blank" rel="noopener">Facebook</a>
+      <a class="ml" href="mailto:mirdavurov@mail.ru">Mail.ru</a>
+      <a class="gm" href="mailto:mirdavurov1996@gmail.com">Gmail</a>
+    </div>
+  </div>
+</div>
+<script>
+var T={
+ru:{name:"Мирдавуров Искандар Мирилёс угли",ini:"МИ",addrv:"махалля Олтинкуль, ул. Олтинкуль, д. 94, кв. 30",addr:"Адрес",mail:"Эл. почта",write:"Написать",phone:"Телефон",call:"Позвонить",soc:"Связаться со мной"},
+uz:{name:"Mirdavurov Iskandar Mirilyos o‘g‘li",ini:"MI",addrv:"Oltinko‘l MFY, Oltinko‘l ko‘chasi, 94-uy, 30-xonadon",addr:"Manzil",mail:"Elektron pochta",write:"Yozish",phone:"Telefon",call:"Qo‘ng‘iroq",soc:"Men bilan bog‘laning"}};
+function age(){var n=new Date(),a=n.getFullYear()-1996;if(n.getMonth()<1||(n.getMonth()==1&&n.getDate()<10))a--;return a}
+function yrs(a){var m=a%10,h=a%100;return (m==1&&h!=11)?"год":(m>=2&&m<=4&&(h<12||h>14))?"года":"лет"}
+function setLang(l){
+  document.documentElement.lang=l;document.title=T[l].name;
+  var a=age();document.getElementById("born").textContent=l==="ru"?"Дата рождения: 10.02.1996 · "+a+" "+yrs(a):"Tug‘ilgan sana: 10.02.1996 · "+a+" yosh";
+  document.querySelectorAll("[data-i]").forEach(function(e){e.textContent=T[l][e.dataset.i]});
+  document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("on",b.dataset.l===l)});
+  try{localStorage.setItem("lang",l)}catch(e){}
+}
+document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
+var s="uz";try{s=localStorage.getItem("lang")||"uz"}catch(e){}
+setLang(s);
+</script>
+</body>
+</html>
